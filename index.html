@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Task Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+
+    .task-manager {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background: #f8f9fa;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .status {
+      font-size: 14px;
+      color: #28a745;
+    }
+
+    .pending {
+      color: #ffc107;
+    }
+
+    .completed {
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <div class="task-manager">
+    <h1>Task Manager</h1>
+    <ul>
+      <li>
+        Task 1: Complete project report 
+        <span class="status pending">Pending</span>
+      </li>
+      <li>
+        Task 2: Review pull requests 
+        <span class="status completed">Completed</span>
+      </li>
+      <li>
+        Task 3: Attend team meeting 
+        <span class="status pending">Pending</span>
+      </li>
+      <li>
+        Task 4: Update documentation 
+        <span class="status completed">Completed</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
